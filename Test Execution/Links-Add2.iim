@@ -1,0 +1,94 @@
+﻿TAG POS=1 TYPE=TD ATTR=ID:ctl04_td_selector
+TAG POS=1 TYPE=SPAN ATTR=TXT:P1
+
+'Step 1: Confirm Links (Center) module displays
+	SAVEAS TYPE=PNG FOLDER="C:\\Users\\ntarvin\\Dropbox\\iMacros\\Macros\\Infostrength 6.0\\Test Case Scenario\\Links (Center)\\Links (Center)-Add\\Test Results" FILE=Step1
+
+'Step 2: Links Details page must display
+	TAG POS=1 TYPE=A ATTR=CLASS:rmLink&&TITLE:Add<SP>New
+		SAVEAS TYPE=PNG FOLDER="C:\\Users\\ntarvin\\Dropbox\\iMacros\\Macros\\Infostrength 6.0\\Test Case Scenario\\Links (Center)\\Links (Center)-Add\\Test Results" FILE=Step2
+		
+		'Step 3: System must require the user to enter a Title and a URL
+	TAG POS=1 TYPE=SPAN ATTR=TXT:Add
+		SAVEAS TYPE=PNG FOLDER="C:\\Users\\ntarvin\\Dropbox\\iMacros\\Macros\\Infostrength 6.0\\Test Case Scenario\\Links (Center)\\Links (Center)-Add\\Test Results" FILE=Step3
+		
+		'Step 4: Attempt to enter a title that consists of more than 100 characters.
+	TAG POS=1 TYPE=INPUT:TEXT FORM=ID:ctl00 ATTR=ID:TitleField CONTENT="123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 Over100"
+			SAVEAS TYPE=PNG FOLDER="C:\\Users\\ntarvin\\Dropbox\\iMacros\\Macros\\Infostrength 6.0\\Test Case Scenario\\Links (Center)\\Links (Center)-Add\\Test Results" FILE=Step4
+			
+			'Step 5: It must be possible to enter a title that consists of 100 characters.
+	TAG POS=1 TYPE=INPUT:TEXT FORM=ID:ctl00 ATTR=ID:TitleField CONTENT="123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 123456789 "
+		SAVEAS TYPE=PNG FOLDER="C:\\Users\\ntarvin\\Dropbox\\iMacros\\Macros\\Infostrength 6.0\\Test Case Scenario\\Links (Center)\\Links (Center)-Add\\Test Results" FILE=Step5
+		
+		'Step 6: Enter an invalid URL. The system must warn the user that a valid URL is required.
+	TAG POS=1 TYPE=INPUT:TEXT FORM=ID:ctl00 ATTR=ID:UrlField CONTENT=my_picture.jpg
+	TAG POS=1 TYPE=SPAN ATTR=TXT:Add
+		SAVEAS TYPE=PNG FOLDER="C:\\Users\\ntarvin\\Dropbox\\iMacros\\Macros\\Infostrength 6.0\\Test Case Scenario\\Links (Center)\\Links (Center)-Add\\Test Results" FILE=Step6
+		
+		'Step 7: Enter a valid URL. The system must return to the FA and the link MUST display.
+	TAG POS=1 TYPE=INPUT:TEXT FORM=ID:ctl00 ATTR=ID:UrlField CONTENT=https://www.test.com/
+	TAG POS=1 TYPE=SPAN ATTR=TXT:Add
+		WAIT SECONDS=1
+			SAVEAS TYPE=PNG FOLDER="C:\\Users\\ntarvin\\Dropbox\\iMacros\\Macros\\Infostrength 6.0\\Test Case Scenario\\Links (Center)\\Links (Center)-Add\\Test Results" FILE=Step7
+			
+			'Step 8: Click the Add New Link. The Links Details Page Must Display
+	TAG POS=1 TYPE=A ATTR=CLASS:rmLink&&TITLE:Add<SP>New
+		SAVEAS TYPE=PNG FOLDER="C:\\Users\\ntarvin\\Dropbox\\iMacros\\Macros\\Infostrength 6.0\\Test Case Scenario\\Links (Center)\\Links (Center)-Add\\Test Results" FILE=Step8
+		
+		'Step 9: Enter a valid title and URL. Attempt to enter a description greater than 500 characters. It must not be possible
+	TAG POS=1 TYPE=INPUT:TEXT FORM=ID:ctl00 ATTR=ID:TitleField CONTENT=Infostrength
+	TAG POS=1 TYPE=INPUT:TEXT FORM=ID:ctl00 ATTR=ID:UrlField CONTENT=http://www.infostrength.com
+	TAG POS=1 TYPE=TEXTAREA FORM=ID:ctl00 ATTR=ID:DescriptionField CONTENT="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by th"
+	TAG POS=1 TYPE=SPAN ATTR=TXT:Add
+		SAVEAS TYPE=PNG FOLDER="C:\\Users\\ntarvin\\Dropbox\\iMacros\\Macros\\Infostrength 6.0\\Test Case Scenario\\Links (Center)\\Links (Center)-Add\\Test Results" FILE=Step9
+		
+		'Step 10: Enter a 100 character description. The link must display in the links module with the description
+	TAG POS=1 TYPE=A ATTR=CLASS:rmLink&&TITLE:Add<SP>New
+	TAG POS=1 TYPE=INPUT:TEXT FORM=ID:ctl00 ATTR=ID:TitleField CONTENT=Infostrength
+	TAG POS=1 TYPE=INPUT:TEXT FORM=ID:ctl00 ATTR=ID:UrlField CONTENT=http://www.google.com
+	TAG POS=1 TYPE=TEXTAREA FORM=ID:ctl00 ATTR=ID:DescriptionField CONTENT="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live."
+	TAG POS=1 TYPE=SPAN ATTR=TXT:Add
+		SAVEAS TYPE=PNG FOLDER="C:\\Users\\ntarvin\\Dropbox\\iMacros\\Macros\\Infostrength 6.0\\Test Case Scenario\\Links (Center)\\Links (Center)-Add\\Test Results" FILE=Step10
+		
+		'Step 11: Click each link and confirm the link works.
+		TAG POS=1 TYPE=A ATTR=ID:ctl09_myDataGrid_ctl03_lUrl
+	TAB T=2
+		SAVEAS TYPE=PNG FOLDER="C:\\Users\\ntarvin\\Dropbox\\iMacros\\Macros\\Infostrength 6.0\\Test Case Scenario\\Links (Center)\\Links (Center)-Add\\Test Results" FILE=Step11A
+	TAB T=1
+	TAG POS=1 TYPE=A ATTR=ID:ctl09_myDataGrid_ctl04_lUrl
+	TAB T=2
+	SAVEAS TYPE=PNG FOLDER="C:\\Users\\ntarvin\\Dropbox\\iMacros\\Macros\\Infostrength 6.0\\Test Case Scenario\\Links (Center)\\Links (Center)-Add\\Test Results" FILE=Step11B
+	TAB T=1
+		
+		'Step 12: Click the Edit button on the link entered in step 7. Change the title, URL, and description. It must be possible for a creator to edit a link he created.
+	TAG POS=1 TYPE=IMG ATTR=SRC:https://vmtst1.infostrength.biz/SESDevTest/images/edit.png
+		TAG POS=1 TYPE=INPUT:TEXT FORM=ID:ctl00 ATTR=ID:TitleField CONTENT=InfostrengthEdit
+		TAG POS=1 TYPE=INPUT:TEXT FORM=ID:ctl00 ATTR=ID:UrlField CONTENT=http://www.trello.com
+		TAG POS=1 TYPE=TEXTAREA FORM=ID:ctl00 ATTR=ID:DescriptionField CONTENT="Description Edit"
+		TAG POS=1 TYPE=SPAN ATTR=TXT:Update
+			WAIT SECONDS=0.5
+			SAVEAS TYPE=PNG FOLDER="C:\\Users\\ntarvin\\Dropbox\\iMacros\\Macros\\Infostrength 6.0\\Test Case Scenario\\Links (Center)\\Links (Center)-Add\\Test Results" FILE=Step12
+			
+			'Step 13: Click the Edit button. Click Delete. It must be possible for a creator to delete a link he created.
+		TAG POS=1 TYPE=IMG ATTR=SRC:https://vmtst1.infostrength.biz/SESDevTest/images/edit.png
+			WAIT SECONDS=0.3
+		ONDIALOG POS=1 BUTTON=OK CONTENT=
+		TAG POS=1 TYPE=SPAN ATTR=TXT:Delete<SP>this<SP>Item
+			SAVEAS TYPE=PNG FOLDER="C:\\Users\\ntarvin\\Dropbox\\iMacros\\Macros\\Infostrength 6.0\\Test Case Scenario\\Links (Center)\\Links (Center)-Add\\Test Results" FILE=Step13
+		
+			'SAVEAS TYPE=PNG FOLDER="C:\\Users\\ntarvin\\Dropbox\\iMacros\\Macros\\Infostrength 6.0\\Test Case Scenario\\Links (Center)\\Links (Center)-Add\\Test Results" FILE=Step13B
+			
+			'Step 14: Select a different Project in the FA. The link must NOT display
+	TAG POS=1 TYPE=TD ATTR=ID:ctl04_td_selector
+	TAG POS=1 TYPE=SPAN ATTR=TXT:P2
+		WAIT SECONDS=0.5
+		SAVEAS TYPE=PNG FOLDER="C:\\Users\\ntarvin\\Dropbox\\iMacros\\Macros\\Infostrength 6.0\\Test Case Scenario\\Links (Center)\\Links (Center)-Add\\Test Results" FILE=Step14
+		
+		'Step 15: Repeat steps 1-14 in a Subject Center. The Expected Results are the same.
+		
+	'SET !DATASOURCE C:\Users\ntarvin\Dropbox\iMacros\Datasources\FA<SP>Names.csv
+	'SET !DATASOURCE_COLUMNS 4
+	'SET !LOOP 1
+		'TAG POS=3 TYPE=SPAN ATTR=TXT:{{!COL2}}
+		
+'Continue from here for subject center

@@ -1,0 +1,5 @@
+SET !DATASOURCE Infostrength<SP>6.0\Test<SP>Case<SP>Scenario\Links<SP>(Center)\Links<SP>(Center)-Add\Test<SP>Macros\Datasource\FA<SP>Names.csv
+SET !DATASOURCE_COLUMNS 1
+SET !LOOP 2
+
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:SetFuncAreaName ATTR=ID:tabTextBox CONTENT={{!COL1}}

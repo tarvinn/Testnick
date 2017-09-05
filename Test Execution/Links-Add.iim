@@ -1,0 +1,20 @@
+﻿SET !DATASOURCE "Infostrength 6.0\\Test Case Scenario\\Links (Center)\\Links (Center)-Edit\\Test Macros\\Datasource\\FA Names.csv"
+SET !DATASOURCE_COLUMNS 1
+SET !LOOP 2
+
+
+TAG POS=1 TYPE=A ATTR=TXT:Log<SP>off
+TAG POS=1 TYPE=A ATTR=TXT:Login<SP>to<SP>the<SP>InfoStrength<SP>SES
+TAB T=2
+WAIT SECONDS=3
+TAB T=1
+WAIT SECONDS=2
+TAB T=2
+WAIT SECONDS=3
+TAB T=1
+WAIT SECONDS=2
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:Login ATTR=ID:butSignIn
+
+TAG POS=3 TYPE=SPAN ATTR=TXT:{{!COL1}}
+WAIT SECONDS=0.5
+

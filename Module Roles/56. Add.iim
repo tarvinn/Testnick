@@ -1,0 +1,14 @@
+﻿TAG POS=1 TYPE=A ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Role<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Module<SP>Role<SP>Management
+
+'Update Edit Module Role
+
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPanel_RadModuleRoles_ctl00_ctl08_cmdEdit
+FRAME NAME="radPageWindow"
+TAG POS=1 TYPE=A ATTR=TXT:Expand<SP>All/Collapse<SP>All
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_RadGridPermission_ctl00_ctl02_ctl00_chkSelectAllAdd CONTENT=YES
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_RadGridPermission_ctl00_ctl02_ctl00_chkSelectAllAdd CONTENT=YES
+WAIT SECONDS=1
+TAG POS=1 TYPE=SPAN ATTR=TXT:Save
+FRAME F=0

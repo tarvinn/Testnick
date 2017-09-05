@@ -1,0 +1,2 @@
+TAG POS=1 TYPE=SELECT FORM=ID:ModuleSelection ATTR=ID:DDL_Mods CONTENT=%DesktopModules/Links.ascx
+TAG POS=1 TYPE=A ATTR=ID:addModButton
