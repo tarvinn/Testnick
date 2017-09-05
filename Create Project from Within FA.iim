@@ -1,0 +1,9 @@
+﻿SET !VAR1 EVAL("var randomNumber=Math.floor(Math.random()*10000 + 1); randomNumber;")
+SET !VAR2 EVAL("var randomNumber=Math.floor(Math.random()*10000 + 1); randomNumber;")
+TAG POS=1 TYPE=A ATTR=TXT:Add<SP>New
+FRAME F=3
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPanel_txtProjectName CONTENT={{!VAR1}}
+TAG POS=1 TYPE=TEXTAREA FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPanel_txtDescription CONTENT={{!VAR2}}
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPanel_btnSave_input
+WAIT SECONDS=1.0
+TAG POS=1 TYPE=SPAN ATTR=TXT:Save

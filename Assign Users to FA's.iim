@@ -1,0 +1,157 @@
+﻿SET !DATASOURCE C:\Users\ntarvin\Dropbox\iMacros\Datasources\FA<SP>Names.csv
+SET !DATASOURCE_COLUMNS 4
+SET !LOOP 1
+
+TAG POS=1 TYPE=A ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Role<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Functional<SP>Area<SP>Roles
+TAG POS=3 TYPE=SPAN ATTR=TXT:Users
+'Assign Button for Groups is POS2
+TAG POS=2 TYPE=SPAN ATTR=TXT:Assign
+FRAME NAME="radPageWindow"
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select<SP>Functional<SP>Area
+FRAME NAME="radMainWindow"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_FASearchFilter_txtSearch CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_FASearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGridItem_ctl00_ctl02_ctl01_chkSelectAll CONTENT=YES
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_FASearchFilter_txtSearch CONTENT={{!COL2}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_FASearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGridItem_ctl00_ctl02_ctl01_chkSelectAll CONTENT=YES
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_FASearchFilter_txtSearch CONTENT={{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_FASearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGridItem_ctl00_ctl02_ctl01_chkSelectAll CONTENT=YES
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_FASearchFilter_txtSearch CONTENT={{!COL4}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_FASearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGridItem_ctl00_ctl02_ctl01_chkSelectAll CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+
+
+SET !DATASOURCE C:\Users\ntarvin\Dropbox\iMacros\Datasources\Admin<SP>Area\Users\Create<SP>Users.csv
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 2
+
+
+FRAME NAME="radPageWindow"
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select<SP>Users
+FRAME NAME="radMainWindow"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadUsers_ctl00_ctl02_ctl01_chkSelectAll CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+
+SET !DATASOURCE C:\Users\ntarvin\Dropbox\iMacros\Datasources\Admin<SP>Area\Users\Create<SP>Users.csv
+SET !DATASOURCE_COLUMNS 4
+SET !LOOP 3
+
+
+FRAME NAME="radPageWindow"
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select<SP>Users
+FRAME NAME="radMainWindow"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadUsers_ctl00_ctl02_ctl01_chkSelectAll CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+
+SET !DATASOURCE C:\Users\ntarvin\Dropbox\iMacros\Datasources\Admin<SP>Area\Users\Create<SP>Users.csv
+SET !DATASOURCE_COLUMNS 4
+SET !LOOP 4
+
+
+FRAME NAME="radPageWindow"
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select<SP>Users
+FRAME NAME="radMainWindow"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadUsers_ctl00_ctl02_ctl01_chkSelectAll CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+
+SET !DATASOURCE C:\Users\ntarvin\Dropbox\iMacros\Datasources\Admin<SP>Area\Users\Create<SP>Users.csv
+SET !DATASOURCE_COLUMNS 4
+SET !LOOP 5
+
+
+FRAME NAME="radPageWindow"
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select<SP>Users
+FRAME NAME="radMainWindow"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadUsers_ctl00_ctl02_ctl01_chkSelectAll CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+
+SET !DATASOURCE C:\Users\ntarvin\Dropbox\iMacros\Datasources\Admin<SP>Area\Users\Create<SP>Users.csv
+SET !DATASOURCE_COLUMNS 4
+SET !LOOP 6
+
+
+FRAME NAME="radPageWindow"
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select<SP>Users
+FRAME NAME="radMainWindow"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadUsers_ctl00_ctl02_ctl01_chkSelectAll CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+
+SET !DATASOURCE C:\Users\ntarvin\Dropbox\iMacros\Datasources\Admin<SP>Area\Users\Create<SP>Users.csv
+SET !DATASOURCE_COLUMNS 4
+SET !LOOP 7
+
+
+FRAME NAME="radPageWindow"
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select<SP>Users
+FRAME NAME="radMainWindow"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadUsers_ctl00_ctl02_ctl01_chkSelectAll CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+
+SET !DATASOURCE C:\Users\ntarvin\Dropbox\iMacros\Datasources\Admin<SP>Area\Users\Create<SP>Users.csv
+SET !DATASOURCE_COLUMNS 4
+SET !LOOP 8
+
+
+FRAME NAME="radPageWindow"
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select<SP>Users
+FRAME NAME="radMainWindow"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadUsers_ctl00_ctl02_ctl01_chkSelectAll CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+
+SET !DATASOURCE C:\Users\ntarvin\Dropbox\iMacros\Datasources\Admin<SP>Area\Users\Create<SP>Users.csv
+SET !DATASOURCE_COLUMNS 4
+SET !LOOP 9
+
+
+FRAME NAME="radPageWindow"
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select<SP>Users
+FRAME NAME="radMainWindow"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadUsers_ctl00_ctl02_ctl01_chkSelectAll CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+
+SET !DATASOURCE C:\Users\ntarvin\Dropbox\iMacros\Datasources\Admin<SP>Area\Users\Create<SP>Users.csv
+SET !DATASOURCE_COLUMNS 4
+SET !LOOP 10
+
+
+FRAME NAME="radPageWindow"
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select<SP>Users
+FRAME NAME="radMainWindow"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadUsers_ctl00_ctl02_ctl01_chkSelectAll CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+FRAME NAME="radPageWindow"
+TAG POS=1 TYPE=TEXTAREA FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtReason CONTENT=Gave<SP>access<SP>to<SP>new<SP>users.
+TAG POS=1 TYPE=SPAN ATTR=TXT:Save

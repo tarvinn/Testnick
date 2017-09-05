@@ -1,0 +1,3 @@
+﻿TAG POS=2 TYPE=IMG ATTR=SRC:https://infostrengthses.com/intelliject/Images/Modules/ModuleOptions.png
+WAIT SECONDS =0.5
+TAG POS=1 TYPE=IMG ATTR=SRC:https://infostrengthses.com/intelliject/Images/edit.gif
