@@ -1,0 +1,1483 @@
+﻿SET !DATASOURCE C:\Users\ntarvin\Dropbox\iMacros\Datasources\Create<SP>Users<SP>And<SP>Groups.csv
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 2
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=A ATTR=TXT:Admin
+WAIT SECONDS=0.2
+TAG POS=1 TYPE=SPAN ATTR=TXT:User<SP>Management
+WAIT SECONDS=0.2
+TAG POS=1 TYPE=SPAN ATTR=TXT:User<SP>Management<SP>Wizard
+WAIT SECONDS=0.2
+TAG POS=1 TYPE=A ATTR=TXT:Add<SP>User(s)
+WAIT SECONDS=0.2
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 3
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 4
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 5
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 6
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 7
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 8
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 9
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 10
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 11
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+
+
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 12
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 13
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 14
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 15
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 16
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 17
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 18
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 19
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 20
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 21
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+
+
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 22
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 23
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 24
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 25
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 26
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 27
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 28
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 29
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 30
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:btnAddNotherUser
+WAIT SECONDS=0.5
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 31
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterFirstName_txtSearchWords CONTENT={{!COL1}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterLastName_txtSearchWords CONTENT={{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterTitle_txtSearchWords CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucUserSearchFilters_filterCompany_txtSearchWords CONTENT=Company
+TAG POS=1 TYPE=A ATTR=ID:btnNewUser
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtBusinessEmailConfirmSD CONTENT=infostrengthparse@gmail.com
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtCompanyNameSD CONTENT=Company
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtTitleSD CONTENT=Title
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:txtDepartmentSD CONTENT=Department
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+WAIT SECONDS=1
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_finishButton
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:Form1 ATTR=ID:ucSignature_txtUserID CONTENT=Admin
+SET !ENCRYPTION NO
+TAG POS=1 TYPE=INPUT:PASSWORD FORM=ID:Form1 ATTR=ID:ucSignature_txtPassword CONTENT=Admin
+ONDIALOG POS=1 BUTTON=OK CONTENT=
+TAG POS=1 TYPE=A ATTR=ID:ucWizNavigation_nextButton
+FRAME F=0
+'col 1=First col 2=Last col 3=Last number col 4= group name col 5=group description col 6=first name initial col 7=group number
+
+SET !DATASOURCE C:\Users\ntarvin\Dropbox\iMacros\Datasources\Create<SP>Users<SP>And<SP>Groups.csv
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 2
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=SPAN ATTR=TXT:Admin
+FRAME F=1
+TAG POS=1 TYPE=SPAN ATTR=TXT:Admin
+FRAME F=0
+TAG POS=1 TYPE=SPAN ATTR=TXT:Admin
+
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 3
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=SPAN ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 4
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=SPAN ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 5
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=SPAN ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 6
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=SPAN ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 7
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=SPAN ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 8
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=SPAN ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 9
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=SPAN ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 10
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=SPAN ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 11
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=SPAN ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+
+'Break - Child Groups
+
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 12
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=SPAN ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 13
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=SPAN ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 14
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=SPAN ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 15
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=SPAN ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 16
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=SPAN ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 17
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=SPAN ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 18
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=SPAN ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 19
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=SPAN ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 20
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=SPAN ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 21
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=SPAN ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+
+
+'Break - Parent Groups
+
+
+SET !DATASOURCE F:\iMacros\Datasources\Create<SP>Users<SP>And<SP>Groups.csv
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 22
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=A ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=3 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=DIV ATTR=ID:ctl00_ContentPage_RadAjaxPanelGroups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>System<SP>Groups
+FRAME NAME="radMainWindow2"
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 12
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_GroupSearchFilter_txtSearch CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:form1 ATTR=NAME:RadGrid2$ctl00$ctl03$ctl01$ctl02
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_GroupSearchFilter_cmdSearch
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid2_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+FRAME F=1
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=SPAN ATTR=TXT:Users
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 22
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+WAIT SECONDS=0.1
+FRAME F=1
+TAG POS=1 TYPE=SPAN ATTR=TXT:Save<SP>Group
+WAIT SECONDS=0.1
+FRAME F=0
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 23
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=A ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=3 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=DIV ATTR=ID:ctl00_ContentPage_RadAjaxPanelGroups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>System<SP>Groups
+FRAME NAME="radMainWindow2"
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 13
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_GroupSearchFilter_txtSearch CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:form1 ATTR=NAME:RadGrid2$ctl00$ctl03$ctl01$ctl02
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_GroupSearchFilter_cmdSearch
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid2_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+FRAME F=1
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=SPAN ATTR=TXT:Users
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 23
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+WAIT SECONDS=0.1
+FRAME F=1
+TAG POS=1 TYPE=SPAN ATTR=TXT:Save<SP>Group
+WAIT SECONDS=0.1
+FRAME F=0
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 24
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=A ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=3 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=DIV ATTR=ID:ctl00_ContentPage_RadAjaxPanelGroups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>System<SP>Groups
+FRAME NAME="radMainWindow2"
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 14
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_GroupSearchFilter_txtSearch CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:form1 ATTR=NAME:RadGrid2$ctl00$ctl03$ctl01$ctl02
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_GroupSearchFilter_cmdSearch
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid2_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+FRAME F=1
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=SPAN ATTR=TXT:Users
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 24
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+WAIT SECONDS=0.1
+FRAME F=1
+TAG POS=1 TYPE=SPAN ATTR=TXT:Save<SP>Group
+WAIT SECONDS=0.1
+FRAME F=0
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 25
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=A ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=3 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=DIV ATTR=ID:ctl00_ContentPage_RadAjaxPanelGroups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>System<SP>Groups
+FRAME NAME="radMainWindow2"
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 15
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_GroupSearchFilter_txtSearch CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:form1 ATTR=NAME:RadGrid2$ctl00$ctl03$ctl01$ctl02
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_GroupSearchFilter_cmdSearch
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid2_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+FRAME F=1
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=SPAN ATTR=TXT:Users
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 25
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+WAIT SECONDS=0.1
+FRAME F=1
+TAG POS=1 TYPE=SPAN ATTR=TXT:Save<SP>Group
+WAIT SECONDS=0.1
+FRAME F=0
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 26
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=A ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=3 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=DIV ATTR=ID:ctl00_ContentPage_RadAjaxPanelGroups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>System<SP>Groups
+FRAME NAME="radMainWindow2"
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 16
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_GroupSearchFilter_txtSearch CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:form1 ATTR=NAME:RadGrid2$ctl00$ctl03$ctl01$ctl02
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_GroupSearchFilter_cmdSearch
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid2_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+FRAME F=1
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=SPAN ATTR=TXT:Users
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 26
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+WAIT SECONDS=0.1
+FRAME F=1
+TAG POS=1 TYPE=SPAN ATTR=TXT:Save<SP>Group
+WAIT SECONDS=0.1
+FRAME F=0
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 27
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=A ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=3 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=DIV ATTR=ID:ctl00_ContentPage_RadAjaxPanelGroups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>System<SP>Groups
+FRAME NAME="radMainWindow2"
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 17
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_GroupSearchFilter_txtSearch CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:form1 ATTR=NAME:RadGrid2$ctl00$ctl03$ctl01$ctl02
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_GroupSearchFilter_cmdSearch
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid2_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+FRAME F=1
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=SPAN ATTR=TXT:Users
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 27
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+WAIT SECONDS=0.1
+FRAME F=1
+TAG POS=1 TYPE=SPAN ATTR=TXT:Save<SP>Group
+WAIT SECONDS=0.1
+FRAME F=0
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 28
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=A ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=3 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=DIV ATTR=ID:ctl00_ContentPage_RadAjaxPanelGroups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>System<SP>Groups
+FRAME NAME="radMainWindow2"
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 18
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_GroupSearchFilter_txtSearch CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:form1 ATTR=NAME:RadGrid2$ctl00$ctl03$ctl01$ctl02
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_GroupSearchFilter_cmdSearch
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid2_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+FRAME F=1
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=SPAN ATTR=TXT:Users
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 28
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+WAIT SECONDS=0.1
+FRAME F=1
+TAG POS=1 TYPE=SPAN ATTR=TXT:Save<SP>Group
+WAIT SECONDS=0.1
+FRAME F=0
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 29
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=A ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=3 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=DIV ATTR=ID:ctl00_ContentPage_RadAjaxPanelGroups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>System<SP>Groups
+FRAME NAME="radMainWindow2"
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 19
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_GroupSearchFilter_txtSearch CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:form1 ATTR=NAME:RadGrid2$ctl00$ctl03$ctl01$ctl02
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_GroupSearchFilter_cmdSearch
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid2_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+FRAME F=1
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=SPAN ATTR=TXT:Users
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 29
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+WAIT SECONDS=0.1
+FRAME F=1
+TAG POS=1 TYPE=SPAN ATTR=TXT:Save<SP>Group
+WAIT SECONDS=0.1
+FRAME F=0
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 30
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=A ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=3 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=DIV ATTR=ID:ctl00_ContentPage_RadAjaxPanelGroups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>System<SP>Groups
+FRAME NAME="radMainWindow2"
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 20
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_GroupSearchFilter_txtSearch CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:form1 ATTR=NAME:RadGrid2$ctl00$ctl03$ctl01$ctl02
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_GroupSearchFilter_cmdSearch
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid2_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+FRAME F=1
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=SPAN ATTR=TXT:Users
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 30
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+WAIT SECONDS=0.1
+FRAME F=1
+TAG POS=1 TYPE=SPAN ATTR=TXT:Save<SP>Group
+WAIT SECONDS=0.1
+FRAME F=0
+
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 31
+
+SET !ERRORIGNORE YES
+'Commands that fail sometimes (element missing)
+
+TAG POS=1 TYPE=A ATTR=TXT:Admin
+TAG POS=1 TYPE=SPAN ATTR=TXT:Group<SP>Management
+TAG POS=1 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Group
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtGroup CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:aspnetForm ATTR=ID:ctl00_ContentPage_txtDescription CONTENT={{!COL5}}
+TAG POS=3 TYPE=SPAN ATTR=TXT:Groups
+TAG POS=1 TYPE=DIV ATTR=ID:ctl00_ContentPage_RadAjaxPanelGroups
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>System<SP>Groups
+FRAME NAME="radMainWindow2"
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 21
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_GroupSearchFilter_txtSearch CONTENT={{!COL4}}{{!COL7}}
+TAG POS=1 TYPE=INPUT:SUBMIT FORM=ID:form1 ATTR=NAME:RadGrid2$ctl00$ctl03$ctl01$ctl02
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_GroupSearchFilter_cmdSearch
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid2_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+FRAME F=1
+FRAME NAME="radPageWindow2"
+TAG POS=1 TYPE=SPAN ATTR=TXT:Users
+TAG POS=1 TYPE=SPAN ATTR=TXT:Add<SP>Users
+FRAME NAME="radMainWindow2"
+SET !DATASOURCE_COLUMNS 7
+SET !LOOP 31
+TAG POS=1 TYPE=INPUT:TEXT FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_txtSearch CONTENT={{!COL6}}{{!COL2}}{{!COL3}}
+TAG POS=1 TYPE=INPUT:IMAGE FORM=ID:form1 ATTR=ID:uc_UserSearchFilter_cmdSearch
+WAIT SECONDS=0.5
+TAG POS=1 TYPE=INPUT:CHECKBOX FORM=ID:form1 ATTR=ID:RadGrid1_ctl00_ctl02_ctl01_chkHeader CONTENT=YES
+TAG POS=1 TYPE=SPAN ATTR=TXT:Select
+WAIT SECONDS=0.1
+FRAME F=1
+TAG POS=1 TYPE=SPAN ATTR=TXT:Save<SP>Group
+WAIT SECONDS=0.1
+FRAME F=0
